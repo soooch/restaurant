@@ -1,8 +1,10 @@
+// variable holds current nav section
 var item = 2;
 function navClose(shift) {
     document.getElementById("main-nav").classList.add("main-nav-closed");
     document.getElementById("main-nav-hamburger").classList.remove("main-nav-hamburger-hide");
     document.getElementById("main-nav-close-btn").classList.add("main-nav-close-btn-hide");
+    // shift just represents the current nav item. refers to y translation of ul
     if (shift == 1) {
         document.getElementById("main-nav-list").className = "main-nav-bar-about";
         document.getElementById("main-nav-about").classList.remove("main-nav-item-hidden");
@@ -34,6 +36,7 @@ function navClose(shift) {
         item = 3;
     }
     else {
+        // maintains current section
         navClose(item);
     }
 }
