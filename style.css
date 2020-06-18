@@ -1,0 +1,131 @@
+body {
+    padding-top: 50px;
+}
+
+#main-nav {
+    background-color: #000;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transition: all .5s ease;
+}
+
+.main-nav-closed {
+    height: 50px!important;
+}
+
+.main-nav-bar-about {
+    transform: translateY(90px);
+}
+
+.main-nav-bar-contact {
+    transform: translateY(-90px);
+}
+
+.main-nav-bar-center {
+    transform: translateY(0px);
+}
+
+ul#main-nav-list {
+    display: block;
+    list-style: none;
+    padding: 0;
+    transition: transform .5s ease;
+}
+
+li.main-nav-item {
+    display: block;
+    font-family: 'Lexend Tera', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    height: 90px;
+    width: 100px;
+    line-height: 90px;
+    cursor: pointer;
+    transition: visibility .5s ease;
+}
+
+.main-nav-item-hidden {
+    visibility: hidden;
+}
+
+#main-nav-hamburger {
+    margin-right: 20px;
+    height: 10px;
+    width: 30px;
+    right: 0;
+    z-index: 4;
+    position: absolute;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    transition: transform .5s ease;
+    cursor: pointer;
+
+}
+
+.main-nav-hamburger-hide {
+    transform: translateX(60px);
+}
+
+#main-nav-close-btn {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    z-index: 5;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+
+#main-nav-close-btn > img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-nav-close-btn-hide {
+    transform: translateX(60px);
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
+@media screen and (min-width: 720px) {
+    #main-nav {
+        height: 50px;
+    }
+
+    li.main-nav-item {
+        display: inline-block;
+    }
+
+    .main-nav-item-hidden {
+        visibility: visible;
+        opacity: .7;
+    }
+
+    #main-nav-hamburger {
+        transform: translateX(60px);
+    }
+    
+    .main-nav-bar-about {
+        transform: translateY(0px);
+    }
+
+    .main-nav-bar-contact {
+        transform: translateY(0px);
+    }
+    
+    #main-nav-close-btn {
+        transform: translateX(60px);
+    }
+}

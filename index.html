@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Restaurant</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
+        <script src="nav.js"></script>
+    </head>
+    <body>
+        <nav id="main-nav">
+            <ul id="main-nav-list">
+                <li id="main-nav-about" class="main-nav-item" onclick="navClose(1)">ABOUT</li>
+                <li id="main-nav-menu" class="main-nav-item" onclick="navClose(2)">MENU</li>
+                <li id="main-nav-contact" class="main-nav-item" onclick="navClose(3)">CONTACT</li>
+            </ul>
+            <div onclick="navOpen()" id="main-nav-hamburger" class="main-nav-hamburger-hide"></div>
+            <div onclick="navClose()" id="main-nav-close-btn" class="main-nav-close-btn-hide">
+                <img src="close.svg" alt="close">
+            </div>
+        </nav>
+        <h1>Test</h1>
+    </body>
+</html>
